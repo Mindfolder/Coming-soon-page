@@ -119,7 +119,7 @@ html, body{
 	padding:0;
 	margin:0 auto 0 auto;
 	min-width:993px;
-	max-width:2000px;
+	background: #497ddb;
 }
 
 /* ----------------------------------------------------------------------- home page content */
@@ -127,7 +127,6 @@ html, body{
 #content
 {
 	overflow:hidden;
-	background: #497ddb;
 }
 
 #container > #content > #left
@@ -136,7 +135,7 @@ html, body{
     float:left;    
     width: 54%;
     background: #fff;
-    padding:30px 0 30px 13%;
+    padding: 245px 0 245px 13%;
 }
 
 #container > #content > #right
@@ -145,7 +144,7 @@ html, body{
     height: 100%;
     float: right;
     width: 18%;
-    padding:190px 5% 30px 10%;
+    padding:180px 9% 30px 6%;
 }
 
 #container > #content > #right p{
@@ -159,7 +158,7 @@ html, body{
 .floaty
 {
 	overflow:hidden;
-	height: 36px;
+	height: 54px;
     width: 100%;
     bottom: 0;
     position: fixed;
@@ -167,9 +166,20 @@ html, body{
 
 .fleft
 {
-    background-color: purple;
     float: left;
     width: 67%;
+    background-color: #fff;
+}
+
+.fleft > .bg
+{
+    background-image: url(../images/footer-left-inside.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.fleft .bg > .container {
+	padding: 16px 20px 16px 20px;
 }
 
 .fleft p{
@@ -223,6 +233,10 @@ html, body{
 	line-height:100%;
 	color:#a4beed;
 	text-align:right;
+}
+
+.fright > .container {
+	padding: 10px;
 }
 
 #about-page #about a{

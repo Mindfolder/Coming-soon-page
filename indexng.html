@@ -5,6 +5,9 @@
 <title>Welcome to Mindfolder</title>
 <link href="styles/styleng.css" rel="stylesheet" type="text/css" />
 <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<script type="text/javascript" src="scripts/jquery-1.7.1.min.js"></script>
+<script src="scripts/fade.js" type="text/javascript"></script>
+
 <!--[if lte IE 6]>
 <style type="text/css">
  img{
@@ -36,24 +39,30 @@
         </div><!-- content end -->
         <div class="floaty">
             <div class="fleft">
-                <div id="twitter" class="jq-heading">
-                    <div class="base-pic"><img src="images/twitter.png" alt="Follow on Twitter" /> &nbsp;Follow on Twitter</div>
-                    <div class="jq"><a href="#"><img src="images/twitter-hover.png" alt="Follow on Twitter" /> &nbsp;Follow on Twitter</a></div>
-                </div><!--twitter ends-->
-                
-                <div id="blog" class="jq-heading">
-                    <div class="base-pic"><img src="images/blog.png" alt="Read the blog" /> &nbsp;Read the blog</div>
-                    <div class="jq"><a href="#"><img src="images/blog-hover.png" alt="Read the blog" /> &nbsp;Read the blog</a></div>
-                </div><!--blog ends-->
-                
-                <div id="os" class="jq-heading">
-                    <div class="base-pic"><em>For Windows, Mac &amp; Linux</em> <img src="images/os.png" alt="For Windows, Mac &amp; Linux" /></div>
-                    <div class="jq"><span>For Windows, Mac &amp; Linux</span> <img src="images/os-hover.png" alt="For Windows, Mac &amp; Linux" /></div>
-                </div><!--os ends-->
-            </div> <!-- fleft end -->
+                <div class="bg">
+                    <div class="container">
+                        <div id="twitter" class="jq-heading">
+                            <div class="base-pic"><img src="images/twitter.png" alt="Follow on Twitter" /> &nbsp;Follow on Twitter</div>
+                            <div class="jq"><a href="#"><img src="images/twitter-hover.png" alt="Follow on Twitter" /> &nbsp;Follow on Twitter</a></div>
+                        </div><!--twitter ends-->
+                        
+                        <div id="blog" class="jq-heading">
+                            <div class="base-pic"><img src="images/blog.png" alt="Read the blog" /> &nbsp;Read the blog</div>
+                            <div class="jq"><a href="#"><img src="images/blog-hover.png" alt="Read the blog" /> &nbsp;Read the blog</a></div>
+                        </div><!--blog ends-->
+                        
+                        <div id="os" class="jq-heading">
+                            <div class="base-pic"><em>For Windows, Mac &amp; Linux</em> <img src="images/os.png" alt="For Windows, Mac &amp; Linux" /></div>
+                            <div class="jq"><span>For Windows, Mac &amp; Linux</span> <img src="images/os-hover.png" alt="For Windows, Mac &amp; Linux" /></div>
+                        </div><!--os ends-->
+                    </div> 
+                </div>
+            </div><!-- fleft end -->
             <div class="fright">
-                <ul><li><a href="#">Blog</a><em>|</em></li><li><a href="about.html">About</a><em>|</em></li><li><a href="#">Privacy</a></li></ul>
-                <p>&copy; 2012 Derrick Schwabe</p>
+                <div class="container">
+                    <ul><li><a href="#">Blog</a><em>|</em></li><li><a href="about.html">About</a><em>|</em></li><li><a href="#">Privacy</a></li></ul>
+                    <p>&copy; 2012 Derrick Schwabe</p>
+                </div>
             </div> <!-- fright end -->
         </div> <!-- floaty end -->
     ​</div>
