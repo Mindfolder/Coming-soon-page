@@ -1,4 +1,4 @@
-@charset "utf-8";
+/*/*@charset "utf-8";
 
 /* TABLE OF CONTENTS */
 /* ------------------------------ fontface */
@@ -119,44 +119,139 @@ html, body{
 	padding:0;
 	margin:0 auto 0 auto;
 	min-width:993px;
-	/*max-width:2000px;*/
-	/*background:url(../images/container.jpg) repeat-y top right;*/
+	background: #497ddb;
 }
-
-
 
 /* ----------------------------------------------------------------------- home page content */
 
-.content{
-	width:100%;
+#content
+{
 	overflow:hidden;
 }
 
-.leftcol{
-	float:left;
-	width:55%;
-	padding:30px 0 30px 40px;
+#container > #content > #left
+{
+    position: relative;
+    float:left;    
+    width: 54%;
+    background: #fff;
+    padding: 245px 0 245px 13%;
 }
 
-.coming-soon{
-	padding:245px 0 230px 0;
-	text-align:center;
-	width:67%;
+#container > #content > #right
+{
+    position: relative;
+    height: 100%;
+    float: right;
+    width: 18%;
+    padding:180px 110px 30px 0;
 }
 
-.leftcol.coming-soon p{
-	padding:22px 0 0 50px;
+#container > #content > #right p{
+	padding:0 0 20px 0;
+	margin:0;
+	font:normal 20px "CachetStd-Book", Arial, Helvetica, sans-serif;
+	line-height:110%;
+	color:#fff;
+	min-width:300px;
+}
+
+.floaty
+{
+	overflow:hidden;
+	height: 54px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+.fleft
+{
+    float: left;
+    width: 67%;
+    background-color: #fff;
+}
+
+.fleft > .bg
+{
+	background-image:url(../images/footer-left.png); 
+    background-color:#F6F6F6;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+	height:52px;
+}
+
+.fleft .bg > .container {
+	padding: 16px 20px 16px 20px;
+}
+
+.fleft p{
+	padding:0 0 22px 0;
+	margin:0;
+	line-height:150%;
+}
+
+.fright
+{
+    background-color: #497ddb;
+    float: right;
+    width: 33%;
+}
+
+.fright ul{
+	padding:0 0 5px 0;
+	margin:0;
+	line-height:100%;
+	list-style:none;
+	text-align:right;
+}
+
+.fright ul li{
+	padding:0;
+	margin:0;
+	display:inline;
+	font:normal 18px "CachetStd-Book", Arial, Helvetica, sans-serif;
+	color:#fff;
+}
+
+.fright ul li em{
+	padding:0 12px;
+	font-style:normal;
+}
+
+
+.fright ul li a:link, .fright ul li a:visited{
+	text-decoration:none;
+	color:#fff;
+}
+
+.fright ul li a:hover{
+	color:#FFE68A;
+}
+
+.fright p{
+	padding:0 0 8px 0;
+	margin:0;
+	font:normal 15px "CachetStd-Book", Arial, Helvetica, sans-serif;
+	line-height:100%;
+	color:#a4beed;
+	text-align:right;
+}
+
+.fright > .container {
+	padding: 10px;
+}
+
+#about-page #about a{
+	color:#000;
+}
+
+.coming-soon p{
+	padding:22px 0 0 150px;
 	margin:0;
 	font:bold 21px "CachetStd-Book", Arial, Helvetica, sans-serif;
 	color:#aaa;
 	letter-spacing:2px;
-}
-
-.rightcol{
-	float:right;
-	width:28%;
-	padding:190px 10px 30px 20px;
-	background:#497ddb;
 }
 
 h1{
@@ -165,14 +260,7 @@ h1{
 	font:normal 33px "CachetStd-Book", Arial, Helvetica, sans-serif;
 	line-height:110%;
 	color:#fff;
-}
-
-.rightcol p{
-	padding:0 0 20px 0;
-	margin:0;
-	font:normal 20px "CachetStd-Book", Arial, Helvetica, sans-serif;
-	line-height:110%;
-	color:#fff;
+	min-width:300px;
 }
 
 .txtbox{
@@ -203,26 +291,6 @@ a.sign-up:hover{
 	border:1px solid #ffbf00;
 }
 
-
-
-/* ----------------------------------------------------------------------- footer */
-
-.footer{
-	width:100%;
-	overflow:hidden;
-	bottom: 0;
-	position: fixed;
-}
-
-.footer-left{
-	float:left;
-	width:66%;
-	height:36px;
-	background-color:#F6F6F6;
-	overflow:hidden;
-	padding:17px 0 0 20px;
-	border-top: solid #D2D2D2 1px; 
-}
 
 .base-pic{
 	position:absolute;
@@ -285,6 +353,39 @@ a.sign-up:hover{
 	float:right;
 }
 
+h2{
+	padding:0 0 22px 0;
+	margin:0;
+	font:bold 21px "Caslon540LTStd-Roman", Arial, Helvetica, sans-serif;
+	line-height:120%;
+	color:#000;
+}
+
+.clear
+{
+	clear:both;
+}
+
+/* ----------------------------------------------------------------------- footer */
+
+/*.footer{
+	width:100%;
+	overflow:hidden;
+	bottom: 0;
+	position: fixed;
+}
+
+.footer-left{
+	float:left;
+	width:66%;
+	height:36px;
+	background-color:#F6F6F6;
+	overflow:hidden;
+	padding:17px 0 0 20px;
+	border-top: solid #D2D2D2 1px; 
+}
+
+
 .footer-right{
 	float:right;
 	background:#497ddb;
@@ -335,11 +436,11 @@ a.sign-up:hover{
 	text-align:right;
 }
 
-
+*/
 
 /* ----------------------------------------------------------------------- about page content */
 
-h2{
+/*h2{
 	padding:0 0 22px 0;
 	margin:0;
 	font:bold 21px "Caslon540LTStd-Roman", Arial, Helvetica, sans-serif;
@@ -351,23 +452,4 @@ h2{
 	padding:0 0 22px 0;
 	margin:0;
 	line-height:150%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}*/
