@@ -1,4 +1,4 @@
-/*/*@charset "utf-8";
+@charset "utf-8";
 
 /* TABLE OF CONTENTS */
 /* ------------------------------ fontface */
@@ -107,151 +107,97 @@ table {
 
 /* ----------------------------------------------------------------------- body */
 
+* {
+padding: 0;
+margin: 0;
+}
+
 html, body{
 	padding:0;
 	margin:0;
 	font:normal 17px "Caslon540LTStd-Roman", Arial, Helvetica, sans-serif;
 	color:#000;
-	background:#fff;
+	background:#497ddb;
+	height: 100%;
 }
 
 #container{
 	padding:0;
 	margin:0 auto 0 auto;
 	min-width:993px;
-	background: #497ddb;
+	/*max-width:2000px;*/
+	/*background:url(../images/container.jpg) repeat-y top right;*/
+	height: 95%;
 }
+
+
 
 /* ----------------------------------------------------------------------- home page content */
 
-#content
-{
+.content{
+	width:100%;
 	overflow:hidden;
+	height: 100%;
 }
 
-#container > #content > #left
-{
-    position: relative;
-    float:left;    
-    width: 54%;
-    background: #fff;
-    padding: 245px 0 245px 13%;
+.leftcol{
+	float:left;
+	width:68%;
+	padding:30px 0 0 0;
+	background:#fff;
+	min-height: 100%;
 }
 
-#container > #content > #right
-{
-    position: relative;
-    height: 100%;
-    float: right;
-    width: 18%;
-    padding:180px 110px 30px 0;
+.coming-soon{
+	padding:245px 0 0 0;
+	width:68%;
 }
 
-#container > #content > #right p{
-	padding:0 0 20px 0;
-	margin:0;
-	font:normal 20px "CachetStd-Book", Arial, Helvetica, sans-serif;
-	line-height:110%;
-	color:#fff;
-	min-width:300px;
+.logo-area{
+	width:420px;
+	height:220px;
+	margin:0 auto 0 auto;
+	text-align:center;
 }
 
-.floaty
-{
-	overflow:hidden;
-	height: 54px;
-    width: 100%;
-    bottom: 0;
-    position: fixed;
-}
-
-.fleft
-{
-    float: left;
-    width: 67%;
-    background-color: #fff;
-}
-
-.fleft > .bg
-{
-	background-image:url(../images/footer-left.png); 
-    background-color:#F6F6F6;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-	height:52px;
-}
-
-.fleft .bg > .container {
-	padding: 16px 20px 16px 20px;
-}
-
-.fleft p{
-	padding:0 0 22px 0;
-	margin:0;
-	line-height:150%;
-}
-
-.fright
-{
-    background-color: #497ddb;
-    float: right;
-    width: 33%;
-}
-
-.fright ul{
-	padding:0 0 5px 0;
-	margin:0;
-	line-height:100%;
-	list-style:none;
-	text-align:right;
-}
-
-.fright ul li{
-	padding:0;
-	margin:0;
-	display:inline;
-	font:normal 18px "CachetStd-Book", Arial, Helvetica, sans-serif;
-	color:#fff;
-}
-
-.fright ul li em{
-	padding:0 12px;
-	font-style:normal;
-}
-
-
-.fright ul li a:link, .fright ul li a:visited{
-	text-decoration:none;
-	color:#fff;
-}
-
-.fright ul li a:hover{
-	color:#FFE68A;
-}
-
-.fright p{
-	padding:0 0 8px 0;
-	margin:0;
-	font:normal 15px "CachetStd-Book", Arial, Helvetica, sans-serif;
-	line-height:100%;
-	color:#a4beed;
-	text-align:right;
-}
-
-.fright > .container {
-	padding: 10px;
-}
-
-#about-page #about a{
-	color:#000;
-}
-
-.coming-soon p{
-	padding:22px 0 0 150px;
+.leftcol.coming-soon p{
+	padding:22px 0 0 0;
 	margin:0;
 	font:bold 21px "CachetStd-Book", Arial, Helvetica, sans-serif;
 	color:#aaa;
 	letter-spacing:2px;
+	text-align:center;
+}
+
+#os{
+	font:normal 15px "CachetStd-Book", Arial, Helvetica, sans-serif;
+	color:#fff;
+	width:180px;
+	position:relative;
+	margin:0 auto 0 auto;
+	*margin:0 auto 0 25px;
+	padding:20px 0 0 12px;
+	text-align:center;
+}
+
+#os em{
+	color:#fff;
+	font-style:normal;
+}
+
+#os span{
+	color:#aaa;
+  }
+
+#os img{
+	padding:0 0 10px 0;
+}
+
+.rightcol{
+	float:right;
+	width:29%;
+	padding:190px 10px 0 10px;
+	background:#497ddb;
 }
 
 h1{
@@ -260,12 +206,19 @@ h1{
 	font:normal 33px "CachetStd-Book", Arial, Helvetica, sans-serif;
 	line-height:110%;
 	color:#fff;
-	min-width:300px;
+}
+
+.rightcol p{
+	padding:0 0 20px 0;
+	margin:0;
+	font:normal 20px "CachetStd-Book", Arial, Helvetica, sans-serif;
+	line-height:110%;
+	color:#fff;
 }
 
 .txtbox{
 	background:#fff;
-	border:1px solid #9eabc3;
+	border:2px solid #9eabc3;
 	width:240px;
 	height:18px;
 	font:normal 17px "CachetStd-Book", Arial, Helvetica, sans-serif;
@@ -282,15 +235,34 @@ a.sign-up{
 	font:normal 18px "CachetStd-Book", Arial, Helvetica, sans-serif;
 	color:#000;
 	width:84px;
-	border:1px solid #497ddb;
+	border:2px solid #497ddb;
 	text-align:center;
 	padding:7px 0 0 0;
 }
 
 a.sign-up:hover{
-	border:1px solid #ffbf00;
+	border:2px solid #ffbf00;
 }
 
+
+
+/* ----------------------------------------------------------------------- footer */
+
+.footer{
+	width:100%;
+	overflow:hidden;
+	position:absolute;
+	bottom:0;
+}
+
+.footer-left{
+	float:left;
+	width:68%;
+	height:36px;
+	overflow:hidden;
+	padding:21px 0 0 0;
+	background:#fff;
+}
 
 .base-pic{
 	position:absolute;
@@ -307,6 +279,7 @@ a.sign-up:hover{
 	float:left;
 	font:normal 17px "Caslon540LTStd-Roman", Arial, Helvetica, sans-serif;
 	color:#aaa;
+	padding:0 0 0 20px;
 }
 
 #twitter a{
@@ -318,7 +291,7 @@ a.sign-up:hover{
 	float:left;
 	font:normal 17px "Caslon540LTStd-Roman", Arial, Helvetica, sans-serif;
 	color:#aaa;
-	margin:0 0 0 190px;
+	margin:0 0 0 210px;
 }
 
 #blog a{
@@ -326,71 +299,10 @@ a.sign-up:hover{
 	text-decoration:none;
 }
 
-#os{
-	float:right;
-	font:normal 15px "CachetStd-Book", Arial, Helvetica, sans-serif;
-	color:#fff;
-	margin:0 0 0 350px;
-	_margin:0 0 0 150px;
-	*margin:0 0 0 150px;
-	width:300px;
-	position:relative;
-}
-
-#os em{
-	color:#F6F6F6;
-	float:left;
-	font-style:normal;
-}
-
-#os span{
-	color:#aaa;
-	float:left;
-}
-
-#os img{
-	padding:0 0 0 15px;
-	float:right;
-}
-
-h2{
-	padding:0 0 22px 0;
-	margin:0;
-	font:bold 21px "Caslon540LTStd-Roman", Arial, Helvetica, sans-serif;
-	line-height:120%;
-	color:#000;
-}
-
-.clear
-{
-	clear:both;
-}
-
-/* ----------------------------------------------------------------------- footer */
-
-/*.footer{
-	width:100%;
-	overflow:hidden;
-	bottom: 0;
-	position: fixed;
-}
-
-.footer-left{
-	float:left;
-	width:66%;
-	height:36px;
-	background-color:#F6F6F6;
-	overflow:hidden;
-	padding:17px 0 0 20px;
-	border-top: solid #D2D2D2 1px; 
-}
-
-
 .footer-right{
 	float:right;
-	background:#497ddb;
-	padding:5px 20px 0 10px;
-	width:28%;
+	padding:5px 10px 0 10px;
+	width:29%;
 }
 
 .footer-right ul{
@@ -436,11 +348,11 @@ h2{
 	text-align:right;
 }
 
-*/
+
 
 /* ----------------------------------------------------------------------- about page content */
 
-/*h2{
+h2{
 	padding:0 0 22px 0;
 	margin:0;
 	font:bold 21px "Caslon540LTStd-Roman", Arial, Helvetica, sans-serif;
@@ -452,4 +364,25 @@ h2{
 	padding:0 0 22px 0;
 	margin:0;
 	line-height:150%;
-}*/
+}
+
+.leftcol-content{
+	padding:0 180px 0 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
