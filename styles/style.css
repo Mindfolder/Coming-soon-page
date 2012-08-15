@@ -32,13 +32,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* ----------------------------------------------------------------------- body */
 
 * { padding: 0; margin: 0; }
-html, body { padding:0; margin:0; font:normal 17px "Caslon540LTStd-Roman", Arial, Helvetica, sans-serif; color:#000; background:#497ddb; height: 100%; }
-#container { padding:0; margin:0 auto 0 auto; min-width:600px; /*max-width:2000px;*/
-	/*background:url(../images/container.jpg) repeat-y top right;*/
-	height: 95%; }
+html, body { padding:0; margin:0; font:normal 17px "Caslon540LTStd-Roman", Arial, Helvetica, sans-serif; color:#000; background:#497ddb; height: 100%; min-height:460px; }
+#container { padding:0; margin:0 auto 0 auto; min-width:600px; 	height:auto !important; height:100%; min-height:100%;  position:relative }
 /* ----------------------------------------------------------------------- home page content */
 
-.content { width:100%; overflow:hidden; height: 100%; }
+.content { width:100%; overflow:hidden; height: 100%; min-height:450px; border:1px solid red; }
 .leftcol { float:left; width:69%; padding:0; background:#fff; min-height: 100%;  position:absolute; top:0; left:0; min-width:420px;}
 
 .coming-soon { padding:0;width:100%;position:absolute; top:29%; left:50%; width:420px; height:190px; margin:0 0 0 -210px; }
