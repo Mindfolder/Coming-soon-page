@@ -61,7 +61,7 @@ a.sign-up { background:url(../images/sign-in.jpg) repeat-x 0 0; height:30px; tex
 a.sign-up:hover { border:2px solid #ffbf00; }
 /* ----------------------------------------------------------------------- footer */
 
-.footer { width:100%; overflow:hidden; position:absolute; bottom:0; left:0;width:100%; }
+.footer { width:100%; overflow:hidden; position:absolute; bottom:0; left:0;width:100%; min-width:600px; }
 	.footer-left { float:left; width:68%; height:36px; overflow:hidden; padding:21px 0 0 0; position:absolute; bottom:0; left:0; }
 .base-pic { position:absolute; }
 .jq { display:none; margin:0; z-index:100; position:absolute; }
