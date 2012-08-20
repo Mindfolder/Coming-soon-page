@@ -32,11 +32,11 @@ table { border-collapse: collapse; border-spacing: 0; }
 /* ----------------------------------------------------------------------- body */
 
 * { padding: 0; margin: 0; }
-html, body { padding:0; margin:0; font:normal 17px "Caslon540LTStd-Roman", Arial, Helvetica, sans-serif; color:#000; background:#497ddb; height: 100%; min-height:460px; }
-#container { padding:0; margin:0 auto 0 auto; min-width:600px; 	height:auto !important; height:100%; min-height:100%;  position:relative }
+html, body { padding:0; margin:0; font:normal 17px "Caslon540LTStd-Roman", Arial, Helvetica, sans-serif; color:#000; background:#497ddb; height: 100%; }
+#container { padding:0; margin:0 auto 0 auto; min-width:600px; 	height:auto !important; height:100%; min-height:100%;  position:relative; overflow:hidden;  }
 /* ----------------------------------------------------------------------- home page content */
 
-.content { width:100%; overflow:hidden; height: 100%; min-height:450px; border:1px solid red; }
+.content { width:100%; overflow:hidden; height: 100%; min-height:470px; }
 .leftcol { float:left; width:69%; padding:0; background:#fff; min-height: 100%;  position:absolute; top:0; left:0; min-width:420px;}
 
 .coming-soon { padding:0;width:100%;position:absolute; top:29%; left:50%; width:420px; height:190px; margin:0 0 0 -210px; }
@@ -49,14 +49,15 @@ html, body { padding:0; margin:0; font:normal 17px "Caslon540LTStd-Roman", Arial
 	#os span { color:#aaa; }
 	#os img { padding:0 0 10px 0; }
 
-.rightcol { float:right; width:32%; padding:12% 0 0 0; margin:0;  }
+.rightcol { float:right; width:32%;margin:12% 0 0 0; min-height:330px; }
 	.rightcol  .rin{margin:0 0 0 55px;}
 
 h1 { padding:0 0 10px 0; margin:0; font:normal 33px "CachetStd-Book", Arial, Helvetica, sans-serif; line-height:110%; color:#fff; }
 .rightcol p { padding:0 0 20px 0; margin:0; font:normal 20px "CachetStd-Book", Arial, Helvetica, sans-serif; line-height:110%; color:#fff; }
 .txtbox { background:#fff; border:2px solid #9eabc3; width:60%; height:18px; font:normal 17px "CachetStd-Book", Arial, Helvetica, sans-serif; color:#999; margin:0 0 10px 0; padding:7px 10px 5px 10px; }
-a.sign-up { background:url(../images/sign-in.jpg) repeat-x 0 0; height:30px; text-decoration:none; display:inline-block; font:normal 18px "CachetStd-Book", Arial, Helvetica, sans-serif; color:#000; width:84px; border:2px solid #497ddb; text-align:center; padding:7px 0 0 0; }
+a.sign-up { background:url(../images/sign-in.jpg) repeat-x 0 0; height:37px;text-decoration:none; display:inline-block; font:normal 18px "CachetStd-Book", Arial, Helvetica, sans-serif; color:#000; width:84px; border:2px solid #497ddb; text-align:center; position:relative; }
 a.sign-up:hover { border:2px solid #ffbf00; }
+a.sign-up  span{ display:block; position:absolute; top:8px; left:0; width:100%;height:20px; line-height:20px;}
 /* ----------------------------------------------------------------------- footer */
 
 .footer { width:100%; overflow:hidden; position:absolute; bottom:0; left:0;width:100%; min-width:600px; }
@@ -88,6 +89,7 @@ h2 { padding:0 0 22px 0; margin:0; font:bold 21px "Caslon540LTStd-Roman", Arial,
 }
 
 @media (max-width: 767px) {
+.rightcol {min-height:380px; }
 .rightcol  .rin{margin:0 0 0 25px;}
 .txtbox { width:79%;}	
 
